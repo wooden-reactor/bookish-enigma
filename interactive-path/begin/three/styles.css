@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: auto;
+    padding-top: 200px;
+}
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height: 400px;
+    width: 400px;
+}
+
+#pig{
+    transform:scale(1);
+    filter: drop-shadow(30px 10px 10px #4444dd);
+    
+}
+
+#End{
+    filter: drop-shadow(30px 10px 1px #4444dd);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      width: 400px;
+      margin: auto;
+    }
+
+    .container{
+        display: block;
+    }
+
+  }

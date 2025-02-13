@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'computer modern';
+    src: url(fonts/cmunbi.ttf);
+}
+
+
+body {
+    font-family: 'computer modern';
+    font-size: 72px;
+    background-color: whitesmoke;
+    color: forestgreen;
+}
+
+a {
+    font-size: 36px;
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 36px;
+    color: darkslategrey;
+    transition: 2s;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.flex-item{
+    padding: 10px;
+}
+
+#nuclear {
+    background-image: url(images/building1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+#nuclear:hover {
+    background-image: 
+    url(images/darkbricks.jpg);
+    transition: 2s;
+}
+
+#startertext{
+    font-size: 36px;
+    color: darkgrey;
+    text-decoration: none;
+}
+
+#startertext:hover{
+    font-size: 36px;
+    color: whitesmoke;
+    text-decoration:wavy;
+    transition: 2s;
+}
+
+li{
+    padding: 10px;
+    border: black 1px solid;
+    margin: 10px;
+    background-color: darkslategray;
+}
+
+#heron{
+    background-image: url(images/heron3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 75%;
+    height: 300px;
+    width: 200px;
+    position: fixed;
+    top: 100px;
+    left: 400px;
+}
+
+#heron:hover{
+    transform:scale(2);
+    opacity: 50%;
+    rotate: 360deg;
+    transition: 2s;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+            background-color: whitesmoke;
+         }
+    }
