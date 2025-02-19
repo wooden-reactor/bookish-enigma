@@ -1,0 +1,40 @@
+body{
+    background-color: bisque;
+}
+
+#name{
+    width: 400px;
+    height: 80px; 
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+#luca-dogs{
+    width: 400px;
+    height: 600px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+#rocket-left{
+    display: grid;
+    justify-content: left;
+}
+
+#rocket-right{
+    display: flex;
+    justify-content: right;
+}
+
+
+#dates {
+    font-family: fantasy;
+    font-size: 40px;
+    margin: auto;
+    display: grid;
+    align-self: center;
+}
