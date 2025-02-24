@@ -1,13 +1,12 @@
 @font-face {
-    font-family: 'ITC Garamond';
-    src: url(../fonts/font.woff);
-    src: url(../fonts/font.woff2);
+    font-family: 'Garamondt Regular';
+    src: url(../../fonts/Garamondt-Regular.otf);
+    
 }
 
 @font-face {
-    font-family: 'ITC Garamond Italic';
-    src: url(../../../fonts/font-italic.woff);
-    src: url(../../../fonts/font-italic.woff2);
+    font-family: 'Garamondt Italic';
+    src: url(../../fonts/Garamondt-Italic.otf);
 }
 
 
@@ -15,9 +14,11 @@
     display: none;
 }
 
+
 p {
-    font-size: 100px;
-    font-family: 'ITC Garamond Italic'
+    font-size: 90px;
+    font-family: 'Garamondt Regular';
+    src: url(../../fonts/Garamondt-Regular.otf);
 }
 
 
@@ -34,11 +35,6 @@ p:hover{
     align-content: center;
     filter: contast (100) hue-rotate(0) drop-shadow(3px 100px 4px #000000);
 }
-
-/* #building:hover{
-    filter: hue-rotate(170deg);
-    transition: 2s;
-} */
 
 #building:hover{
     filter: contrast(0%) hue-rotate(170deg);

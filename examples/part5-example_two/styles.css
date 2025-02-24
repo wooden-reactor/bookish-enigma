@@ -1,7 +1,6 @@
 @font-face {
-    font-family: 'ITC Garamond Italic';
-    src: url(../../../fonts/font-italic.woff);
-    src: url(../../../fonts/font-italic.woff2);
+    font-family: 'bianzhidai Pearl';
+    src: url(../../fonts/bianzhidai-Pearl.otf);
 }
 
 body{
@@ -16,9 +15,29 @@ body{
 
 #text{
     z-index: 2;
-    font-family: 'ITC Garamond Italic';
-    padding: 20px;
-    text-align: center;
-    border: 1px solid black;
-    font-size: 70px;
+    font-family: 'bianzhidai Pearl';
+    padding: 5px;
+    text-align: left;
+    border: 1px dashed black;
+    font-size: 40px;
+}
+
+#phoenix{
+    opacity: 100%;
+    mix-blend-mode: difference;
+}
+
+#invaders{
+    opacity: 100%;
+    mix-blend-mode: color-burn;
+}
+
+#video{
+    display: grid;
+    align-content: start;
+}
+
+
+.center{
+    margin-left: 400px;
 }
