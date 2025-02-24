@@ -7,8 +7,10 @@
 body {
     font-family: 'computer modern';
     font-size: 72px;
-    background-color: whitesmoke;
     color: forestgreen;
+    background-image: url("images/tealGeo.png");
+    background-blend-mode: color-dodge;
+    background-color: whitesmoke;
 }
 
 a {
@@ -27,6 +29,8 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    margin: auto;
 }
 
 .flex-item{
@@ -61,8 +65,10 @@ a:hover {
 
 li{
     padding: 10px;
-    border: black 1px solid;
-    margin: 10px;
+    border: black 10px solid;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    margin: 100px;
     background-color: darkslategray;
 }
 
@@ -71,17 +77,17 @@ li{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 75%;
-    height: 300px;
-    width: 200px;
+    /* z-index: -1; */
+    height: 150px;
+    width: 100px;
     position: fixed;
     top: 100px;
     left: 400px;
 }
 
 #heron:hover{
-    transform:scale(2);
+    transform:scale(2) matrix(.2, 1, 1, 0, 0, 0);
     opacity: 50%;
-    rotate: 360deg;
     transition: 2s;
 }
 

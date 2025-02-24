@@ -14,11 +14,35 @@
 #appear{
     display: none;
 }
+
 p {
     font-size: 100px;
     font-family: 'ITC Garamond Italic'
 }
 
+
 p:hover{
     text-decoration: underline;
+    filter: drop-shadow(3px 100px 4px #000000);
+    color: white;
+    transition: 2s;
+}
+
+#building{
+    margin: auto;
+    display: grid;
+    align-content: center;
+    filter: contast (100) hue-rotate(0) drop-shadow(3px 100px 4px #000000);
+}
+
+/* #building:hover{
+    filter: hue-rotate(170deg);
+    transition: 2s;
+} */
+
+#building:hover{
+    filter: contrast(0%) hue-rotate(170deg);
+    transition: 8s;
+    transform:skew(80deg, 110deg);
+    transition: 8s;
 }
