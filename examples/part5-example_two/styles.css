@@ -5,6 +5,8 @@
 
 body{
     width: 500px;
+    margin: 2%;
+    display: flex;
 }
 
 .dragme{
@@ -14,12 +16,16 @@ body{
 }
 
 #text{
+    display: flex;
     z-index: 2;
     font-family: 'bianzhidai Pearl';
-    padding: 5px;
-    text-align: left;
+    padding: 10px;
+    text-align: center;
     border: 1px dashed black;
-    font-size: 40px;
+    border-radius: 5px;
+    font-size: 50px;
+    width: 500px;
+    box-shadow: 10px 10px;
 }
 
 #phoenix{
@@ -29,15 +35,16 @@ body{
 
 #invaders{
     opacity: 100%;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: difference;
 }
 
 #video{
-    display: grid;
-    align-content: start;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
 }
 
 
 .center{
-    margin-left: 400px;
+    margin-left: -400px;
 }
