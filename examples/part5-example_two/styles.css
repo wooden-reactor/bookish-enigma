@@ -7,6 +7,8 @@ body{
     width: 500px;
     margin: 2%;
     display: flex;
+    align-items: center;
+    
 }
 
 .dragme{
@@ -23,7 +25,7 @@ body{
     text-align: center;
     border: 1px dashed black;
     border-radius: 5px;
-    font-size: 50px;
+    font-size: 45px;
     width: 500px;
     box-shadow: 10px 10px;
 }
@@ -40,11 +42,12 @@ body{
 
 #video{
     display: flex;
-    justify-content: center;
-    align-self: flex-start;
+    justify-self: flex-end;
+    align-self: baseline;
 }
 
 
 .center{
     margin-left: -400px;
+    /* margin-bottom: -100px; */
 }
