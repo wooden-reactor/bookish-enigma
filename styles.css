@@ -5,12 +5,13 @@
 
 
 body {
-    font-family: 'computer modern';
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 72px;
     color: forestgreen;
     background-image: url("images/tealGeo.png");
-    background-blend-mode: color-dodge;
-    background-color: whitesmoke;
+    background-blend-mode: screen;
+    /* filter: blur(1px); */
+    background-color:whitesmoke;
 }
 
 a {
@@ -26,11 +27,14 @@ a:hover {
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    margin: auto;
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    justify-content: space-around;
+    margin:auto;
+    padding-bottom: 2%;
+    filter: drop-shadow(5px 10px teal) drop-shadow(-5px -5px yellow);
+    mix-blend-mode: hard-light;
 }
 
 .flex-item{
@@ -41,8 +45,13 @@ a:hover {
     background-image: url(images/building1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-self: center;
     height: 200px;
     width: 200px;
+    padding: 200px;
+    /* mix-blend-mode: hard-ligh; */
+    /* border-radius: 200px; */
 }
 #nuclear:hover {
     background-image: 
@@ -52,14 +61,18 @@ a:hover {
 
 #startertext{
     font-size: 36px;
-    color: darkgrey;
+    color: whitesmoke
+    /* z-index: 1; */
     text-decoration: none;
+    padding: 20px;
+    mix-blend-mode: exclusion;
 }
 
 #startertext:hover{
     font-size: 36px;
     color: whitesmoke;
     text-decoration:wavy;
+    padding: 100px;
     transition: 2s;
 }
 
@@ -76,13 +89,13 @@ li{
     background-image: url(images/heron3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 75%;
-    /* z-index: -1; */
-    height: 150px;
-    width: 100px;
+    /* opacity: 75%; */
+    height: 300px;
+    width: 200px;
     position: fixed;
-    top: 100px;
-    left: 400px;
+    top: 80px;
+    left: 410px;
+    mix-blend-mode: color;
 }
 
 #heron:hover{
