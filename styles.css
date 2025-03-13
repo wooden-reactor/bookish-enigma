@@ -50,13 +50,14 @@ a:hover {
     height: 200px;
     width: 200px;
     padding: 200px;
+    transition: 2s ease-in-out;
     /* mix-blend-mode: hard-ligh; */
     /* border-radius: 200px; */
 }
 #nuclear:hover {
     background-image: 
     url(images/darkbricks.jpg);
-    transition: 2s;
+    transition: 2s ease-in-out;
 }
 
 #startertext{
@@ -66,14 +67,16 @@ a:hover {
     text-decoration: none;
     padding: 20px;
     mix-blend-mode: exclusion;
+    transition: 2s ease-in-out;
 }
 
 #startertext:hover{
-    font-size: 36px;
+    font-size: 72px;
     color: whitesmoke;
     text-decoration:wavy;
-    padding: 100px;
-    transition: 2s;
+    filter: blur(5px);
+    padding: 1px;
+    transition: 2s ease-in-out;
 }
 
 li{
@@ -96,12 +99,14 @@ li{
     top: 80px;
     left: 410px;
     mix-blend-mode: color;
+    transition: 2s ease-in-out;
 }
 
 #heron:hover{
+    transition: 2s ease-in-out;
     transform:scale(2) matrix(.2, 1, 1, 0, 0, 0);
     opacity: 50%;
-    transition: 2s;
+
 }
 
 @media only screen and (max-width: 600px) {
