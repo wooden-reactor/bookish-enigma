@@ -9,11 +9,12 @@ body{
     font-size: 26px;
     padding-top: 20px;
     line-height: 1.25em;
+    transition: ease-in-out 2s;
 }
 
 .container:hover{
     line-height: 1.5em;
-    transition: 5s;
+    transition: ease-in-out 2s;
 }
 /* .container span{
     color: white;
@@ -43,178 +44,214 @@ body{
     background-image: url(images/1.png);
     top: 400px;
     left: 800px;
+    transition: ease-out 1s;
 }
 
 #one:hover ~ #img-one{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-two{
     background-image: url(images/2.png);
     top: 200px;
     left: 600px;
+    transition: ease-out 1s;
 }
 
 #two:hover ~ #img-two{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-three{
     background-image: url(images/3.png);
     top: 400px;
     left: 575px;
+    transition: ease-out 1s;
 }
 
 #three:hover ~ #img-three{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-four{
     background-image: url(images/4.png);
     top: 650px;
     left: 750px;
+    transition: ease-out 1s;
 }
 
 #four:hover ~ #img-four{
-    display: block;
+    display: block;    
+    transition: ease-in-out 1s;
 }
 
 #img-five{
     background-image: url(images/5.png);
     top: 550px;
     left: 650px;
+    transition: ease-out 1s;
 }
 
 #five:hover ~ #img-five{
-    display: block;
+    display: block;    
+    transition: ease-in-out 1s;
 }
 
 #img-six{
     background-image: url(images/6.png);
     top: 400px;
     left: 600px;
+    transition: ease-out 1s;
 }
 
 #six:hover ~ #img-six{
-    display: block;
+    display: block;    
+    transition: ease-in-out 1s;
 }
 
 #img-seven{
     background-image: url(images/7.png);
     top: 450px;
     left: 575px;
+    transition: ease-out 1s;
 }
 
 #seven:hover ~ #img-seven{
-    display: block;
+    display: block;    
+    transition: ease-in-out 1s;
 }
 
 #img-eight{
     background-image: url(images/8.png);
     top: 200px;
     left: 500px;
+    transition: ease-out 1s;
 }
 
 #eight:hover ~ #img-eight{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-nine{
     background-image: url(images/9.png);
     top: 100px;
     left: 700px;
+    transition: ease-out 1s;
 }
 
 #nine:hover ~ #img-nine{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-ten{
     background-image: url(images/10.png);
     top: 200px;
     left: 600px;
+    transition: ease-out 1s;
 }
 
 #ten:hover ~ #img-ten{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-eleven{
     background-image: url(images/11.png);
     top: 500px;
     left: 575px;
+    transition: ease-out 1s;
 }
 
 #eleven:hover ~ #img-eleven{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-twelve{
     background-image: url(images/12.png);
     top: 450px;
     left: 800px;
+    transition: ease-out 1s;
 }
 
 #twelve:hover ~ #img-twelve{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-thirteen{
     background-image: url(images/13.png);
     top: 150px;
     left: 600px;
+    transition: ease-out 1s;
 }
 
 #thirteen:hover ~ #img-thirteen{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-fourteen{
     background-image: url(images/14.png);
     top: 200px;
     left: 575px;
+    transition: ease-out 1s;
 }
 
 #fourteen:hover ~ #img-fourteen{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-fifteen{
     background-image: url(images/15.png);
     top: 600px;
     left: 700px;
+    transition: ease-out 1s;
 }
 
 #fifteen:hover ~ #img-fifteen{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-sixteen{
     background-image: url(images/16.png);
     top: 300px;
     left: 700px;
+    transition: ease-out 1s;
 }
 
 #sixteen:hover ~ #img-sixteen{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-seventeen{
     background-image: url(images/17.png);
     top: 200px;
     left: 600px;
+    transition: ease-out 1s;
 }
 
 #seventeen:hover ~ #img-seventeen{
     display: block;
+    transition: ease-out 1s;
 }
 
 #img-eighteen{
     background-image: url(images/18.png);
     top: 100px;
     left: 800px;
+    transition: ease-out 1s;
 }
 
 #eighteen:hover ~ #img-eighteen{
     display: block;
+    transition: ease-out 1s;
 }
