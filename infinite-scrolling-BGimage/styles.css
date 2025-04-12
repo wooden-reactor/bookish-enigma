@@ -1,3 +1,29 @@
+.about {
+    margin: auto;
+    width: 20%;
+}
+
+#about {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 48px;
+    position: fixed;
+    border: solid white 50px;
+    border-style:dashed;
+    padding: 30px;
+    border-radius: 10%;
+    filter: blur(4px);
+    mix-blend-mode: difference;
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+
+
+#about:hover {
+    filter: blur(0px);
+    transition: 1s ease-in-out;
+}
+
 .container {
     overflow: hidden;
 }
@@ -146,10 +172,78 @@
     background: url("images/sliding-background-template24.png") repeat-x;
     height: 500px;
     width: 5076px;
-    animation: slide 13s linear infinite;
+    animation: slide 10s linear infinite;
 }
 
+.sliding-background22 {
+    background: url("images/sliding-background-template27.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 33s linear infinite;
+}
 
+.sliding-background23 {
+    background: url("images/sliding-background-template28.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 43s linear infinite;
+}
+
+.sliding-background24 {
+    background: url("images/sliding-background-template29.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 1s linear infinite;
+}
+
+.sliding-background25 {
+    background: url("images/sliding-background-template30.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 7s linear infinite;
+}
+
+.sliding-background26 {
+    background: url("images/sliding-background-template31.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 8s linear infinite;
+}
+
+.sliding-background27 {
+    background: url("images/sliding-background-template32.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 16.5s linear infinite;
+}
+
+.sliding-background28 {
+    background: url("images/sink.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 7.5s linear infinite;
+}
+
+.sliding-background29 {
+    background: url("images/or.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 6.5s linear infinite;
+}
+
+.sliding-background30 {
+    background: url("images/swim.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 10.5s linear infinite;
+}
+
+.sliding-background31 {
+    background: url("images/sliding-background-template33.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 10.5s linear infinite;
+}
 
 
 @keyframes slide {
