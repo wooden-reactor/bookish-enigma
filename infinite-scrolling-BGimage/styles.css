@@ -30,6 +30,128 @@
     animation: slide 5s linear infinite;
 }
 
+.sliding-background5 {
+    background: url("images/sliding-background-template8.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 5s both infinite;
+}
+
+.sliding-background6 {
+    background: url("images/sliding-background-template11.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 15s linear infinite;
+}
+
+.sliding-background7 {
+    background: url("images/sliding-background-template10.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 14s linear infinite;
+}
+
+.sliding-background8 {
+    background: url("images/sliding-background-template15.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 13.5s linear infinite;
+}
+
+.sliding-background9 {
+    background: url("images/sliding-background-template17.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 24s linear infinite;
+}
+
+.sliding-background10 {
+    background: url("images/sliding-background-template16.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 13s linear infinite;
+}
+
+.sliding-background11 {
+    background: url("images/sliding-background-template13.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 20s linear infinite;
+}
+
+.sliding-background12 {
+    background: url("images/sliding-background-template14.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 16s linear infinite;
+}
+
+.sliding-background13 {
+    background: url("images/sliding-background-template18.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 17s linear infinite;
+}
+
+.sliding-background14 {
+    background: url("images/sliding-background-template19.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 17s linear infinite;
+}
+
+.sliding-background15 {
+    background: url("images/sliding-background-template20.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 33s linear infinite;
+}
+
+.sliding-background16 {
+    background: url("images/sliding-background-template22.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 12s linear infinite;
+}
+
+.sliding-background17 {
+    background: url("images/sliding-background-template21.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 12s linear infinite;
+}
+
+.sliding-background18 {
+    background: url("images/sliding-background-template23.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 12.2s linear infinite;
+}
+
+.sliding-background19 {
+    background: url("images/sliding-background-template25.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 12s linear infinite;
+}
+
+.sliding-background20 {
+    background: url("images/sliding-background-template26.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 11s linear infinite;
+}
+
+.sliding-background21 {
+    background: url("images/sliding-background-template24.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 13s linear infinite;
+}
+
+
+
+
 @keyframes slide {
     0% {
         transform: translate3d(0, 0, 0);
