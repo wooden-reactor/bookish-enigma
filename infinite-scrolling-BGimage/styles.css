@@ -239,7 +239,7 @@ body{
     background: url("images/swim.png") repeat-x;
     height: 500px;
     width: 5076px;
-    animation: slide 10.5s linear infinite;
+    animation: slide 21.5s linear infinite;
 }
 
 .sliding-background31 {
@@ -249,6 +249,12 @@ body{
     animation: slide 10.5s linear infinite;
 }
 
+.sliding-background32 {
+    background: url("images/sliding-background-template34.png") repeat-x;
+    height: 500px;
+    width: 5076px;
+    animation: slide 29.5s linear infinite;
+}
 
 @keyframes slide {
     0% {
