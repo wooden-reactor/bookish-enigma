@@ -1,3 +1,9 @@
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } */
+
 body{
     cursor: url(images/headCursor.png), auto;
 }
@@ -263,4 +269,28 @@ body{
     100% {
         transform: translate3d(-1692px, 0, 0);
     }
+}
+
+.aboutPage-body {
+    background-image: url(images/sliding-background-template11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#testImage {
+    background: url("images/calculator2.gif")repeat;
+    height: 1000px;
+    width: 1000px;
+    margin: auto;
+    mix-blend-mode: luminosity;
+    z-index: 1;
+}
+
+#text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    color: white;
+    margin: auto;
+    width: 20%;
+    /* mix-blend-mode: exclusion; */
 }
