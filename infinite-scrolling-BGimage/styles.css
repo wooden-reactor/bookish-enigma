@@ -272,25 +272,30 @@ body{
 }
 
 .aboutPage-body {
-    background-image: url(images/sliding-background-template11.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(images/forest.png);
+    background-repeat: repeat;
+    background-size: cover;
+    /* filter: blur(2px); */
 }
 
 #testImage {
-    background: url("images/calculator2.gif")repeat;
+    background: url("images/calculator2.gif");
+    background-size: cover;
     height: 1000px;
     width: 1000px;
     margin: auto;
-    mix-blend-mode: luminosity;
+    filter: drop-shadow(2px 5px);
+    transform: scale(34%);
+    mix-blend-mode:multiply;
     z-index: 1;
 }
 
-#text {
+.text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 48px;
-    color: white;
+    font-size: 86px;
+    color:white;
     margin: auto;
-    width: 20%;
-    /* mix-blend-mode: exclusion; */
+    mix-blend-mode: hard-light;
+    filter: blur(2px);
+    z-index: 1;
 }
