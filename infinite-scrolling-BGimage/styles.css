@@ -28,9 +28,29 @@ body{
     transition: 1s ease-in-out;
 }
 
-
 #about:hover {
     filter: blur(0px);
+    transition: 1s ease-in-out;
+}
+
+#about2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 48px;
+    position:fixed;
+    border: solid white 5px;
+    border-style:groove; 
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 15%;
+    filter: blur(4px) drop-shadow(50px 50px);
+    mix-blend-mode: difference;
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+
+#about2:hover {
+    filter: blur(2px);
     transition: 1s ease-in-out;
 }
 

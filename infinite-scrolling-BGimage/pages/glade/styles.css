@@ -28,7 +28,6 @@ body{
     transition: 1s ease-in-out;
 }
 
-
 #about:hover {
     filter: blur(0px);
     transition: 1s ease-in-out;
