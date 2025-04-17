@@ -283,10 +283,12 @@ body{
     background-size: cover;
     height: 1000px;
     width: 1000px;
-    margin: auto;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: 250px;
     filter: drop-shadow(2px 5px);
-    transform: scale(34%);
-    mix-blend-mode:multiply;
+    transform: scale(54%);
+    mix-blend-mode: luminosity;
     z-index: 1;
 }
 
@@ -296,14 +298,14 @@ body{
     color:white;
     margin: auto;
     mix-blend-mode: hard-light;
-    filter: blur(2px);
-    transform: scale(300%) skew(0deg);
+    filter: blur(8px);
+    transform: scale(250%) skew(70deg);
     transition: ease-in-out 1s;
     z-index: 1;
 }
 
 .text:hover {
-    /* color: green; */
-    transform: scale(100%) skew(0deg);
+    filter: blur(4px);
+    transform: scale(150%) skew(0deg);
     transition: ease-in-out 1s;
 }
