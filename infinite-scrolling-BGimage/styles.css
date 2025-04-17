@@ -297,5 +297,13 @@ body{
     margin: auto;
     mix-blend-mode: hard-light;
     filter: blur(2px);
+    transform: scale(300%) skew(0deg);
+    transition: ease-in-out 1s;
     z-index: 1;
+}
+
+.text:hover {
+    /* color: green; */
+    transform: scale(100%) skew(0deg);
+    transition: ease-in-out 1s;
 }
