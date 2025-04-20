@@ -399,4 +399,5 @@ body{
     box-shadow: 5px 5px;
     /* background: url(images/mountain.png); */
     filter: blur(2px);
+    z-index: 1;
 }
