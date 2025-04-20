@@ -54,6 +54,28 @@ body{
     transition: 1s ease-in-out;
 }
 
+#about3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 48px;
+    position:fixed;
+    translate: 890px;
+    border: solid white 5px;
+    border-style:groove; 
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 15%;
+    filter: blur(4px) drop-shadow(50px 50px);
+    mix-blend-mode:hard-light;
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+
+#about3:hover {
+    filter: blur(2px);
+    transition: 1s ease-in-out;
+}
+
 .container {
     overflow: hidden;
 }
@@ -363,4 +385,18 @@ body{
     filter: invert(70%) drop-shadow(500px);
     margin: auto;
     mix-blend-mode: color-burn;
+}
+
+#textBox {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    background-color: white;
+    width: 380px;
+    transform: translateY(80px);
+    background-repeat: repeat-x;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+    /* background: url(images/mountain.png); */
+    filter: blur(2px);
 }
