@@ -385,6 +385,7 @@ body{
     filter: invert(70%) drop-shadow(500px);
     margin: auto;
     mix-blend-mode: color-burn;
+    z-index: 0;
 }
 
 #textBox {
@@ -394,10 +395,9 @@ body{
     background-color: white;
     width: 380px;
     transform: translateY(240px);
-    background-repeat: repeat-x;
     border-radius: 20px;
     box-shadow: 5px 5px;
-    /* background: url(images/mountain.png); */
     filter: blur(2px);
+    mix-blend-mode: hard-light;
     z-index: 1;
 }
