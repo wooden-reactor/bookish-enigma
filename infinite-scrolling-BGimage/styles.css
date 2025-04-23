@@ -369,6 +369,7 @@ body{
     background-size: cover;
     height: 1140px;
     width: 1140px;
+    bottom: ;
     margin: auto;
 }
 
@@ -378,26 +379,29 @@ body{
     background-repeat: repeat;
     height: 1140px;
     width: 1140px;
-    /* border-radius: 50%; */
     border-image: url(images/headCursor.png) 7 fill / 3px / 150px round;
     image-rendering:optimizeSpeed;
-    /* transform:translate(200px); */
     filter: invert(70%) drop-shadow(500px);
     margin: auto;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: difference;
     z-index: 0;
 }
 
 #textBox {
+    position: absolute;
+    left: 50%;
+    top: 39%;
+    transform: translate(-50%, -50%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-weight: 900;
+    font-size: 80px;
     text-align: center;
-    background-color: white;
-    width: 380px;
-    transform: translateY(240px);
+    background-color: whitesmoke;
+    width: 1140px;
+    /* transform: translateY(240px); */
     border-radius: 20px;
     box-shadow: 5px 5px;
-    filter: blur(2px);
-    mix-blend-mode: hard-light;
+    filter: blur(3px);
+    mix-blend-mode: difference;
     z-index: 1;
 }
