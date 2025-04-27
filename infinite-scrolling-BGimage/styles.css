@@ -444,6 +444,7 @@ img:hover{
     border: dashed;
     border-style:ridge;
     border-width: 10px;
+    border-color: white;
     filter: blur(1px);
 }
 
@@ -451,9 +452,9 @@ img:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
     background-color: white;
+    margin-left: 2.5%;
+    text-align: center;
     width: 100px;
-    /* margin: auto; */
-    /* text-align:justify; */
     border: dashed;
     border-style:ridge;
     border-width: 10px;
