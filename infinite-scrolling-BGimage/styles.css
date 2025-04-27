@@ -405,3 +405,61 @@ body{
     mix-blend-mode: difference;
     z-index: 1;
 }
+
+.Canvases {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 400px);
+    justify-content: center;
+    border: dashed;
+    background-color: white;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    image-rendering:optimizeQuality;
+    scale: 1;
+    transition: ease-in-out 1s;
+    border: ridge;
+}
+
+img:hover{
+    scale: 2;
+    transition: ease-in-out 1s;
+}
+
+.canvasText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    background-color: white;
+    width: 100px;
+    margin: auto;
+    text-align:justify;
+    border: dashed;
+    border-style:ridge;
+    border-width: 10px;
+    filter: blur(1px);
+}
+
+#PP {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    background-color: white;
+    width: 100px;
+    /* margin: auto; */
+    /* text-align:justify; */
+    border: dashed;
+    border-style:ridge;
+    border-width: 10px;
+    /* filter: blur(1px); */
+}
+
+#arrayBody {
+    
+}
