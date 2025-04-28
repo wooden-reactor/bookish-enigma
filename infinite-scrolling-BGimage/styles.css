@@ -461,6 +461,31 @@ img:hover{
     /* filter: blur(1px); */
 }
 
-#arrayBody {
-    
+#PPback {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    background-color: white;
+    margin-left: 2.5%;
+    text-align: center;
+    width: 50px;
+    border: dashed;
+    border-style:ridge;
+    border-width: 5px;
+    /* filter: blur(1px); */ 
+}
+
+#people-pleaser {
+    height: 500px;
+    width: 5076px;
+    border: none;
+}
+  
+
+#PPgrp {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: left;
+    mix-blend-mode: difference;
 }
