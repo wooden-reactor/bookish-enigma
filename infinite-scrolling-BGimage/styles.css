@@ -496,7 +496,7 @@ img:hover{
     /* scale: 25%; */
     height: 1000px;
     width: 2000px;
-    /* opacity: 50%; */
+    object-fit:scale-down;
 }
 
 #scroll-2 {
@@ -678,7 +678,7 @@ img:hover{
 }
 
 #scroll-31 {
-    background: url("images/Scroll, Stoned/IMG_20250603_0031.jpg") fixed;
+    background: url("images/Scroll, Stoned/IMG_20250603_0031.jpg") border-box;
     height: 1000px;
     width: 2000px;
 }
@@ -1089,4 +1089,11 @@ img:hover{
     background: url("images/Scroll, Stoned/IMG_20250603_0099.jpg") fixed;
     height: 1000px;
     width: 2000px;
+}
+
+.inset {
+    scale: 400%;
+    margin-left: 500px;
+    mix-blend-mode: exclusion;
+    border: none;
 }
