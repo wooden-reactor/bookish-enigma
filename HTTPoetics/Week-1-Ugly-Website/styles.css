@@ -1,0 +1,31 @@
+body{
+    cursor: url(assets/Cursor_forgetful.gif), auto;
+    background-image: url(assets/Sloppy_joe_sandwich_with_French_fries.jpg);
+    background-repeat: repeat;
+    background-size: 500px;
+    background-position: 50%;
+}
+
+.slime {
+    filter: hue-rotate(90deg);
+    height: 1000px;
+    width: 1000px;
+    transition: 2s ease-in-out;
+    border: double 50px;
+    border-color: white;
+    border-radius: 500px;
+    mix-blend-mode:difference;
+    /* z-index: 0; */
+}
+
+.slime:hover {
+    filter: hue-rotate(170deg);
+    height: 1051px;
+    width: 1052px;
+    border: double 51px;
+    transition: 1s ease-in-out
+}
+
+/* #first {
+filter: blur(20%);
+} */
