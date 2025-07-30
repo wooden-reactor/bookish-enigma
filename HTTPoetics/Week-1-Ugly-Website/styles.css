@@ -1,20 +1,22 @@
 body{
     cursor: url(assets/Cursor_forgetful.gif), auto;
-    background-image: url(assets/Sloppy_joe_sandwich_with_French_fries.jpg);
+    background-image: url(assets/Sloppy_joe_sandwich_with_French_fries_edit2.jpg);
     background-repeat: repeat;
-    background-size: 500px;
+    background-size: 1000px;
     background-position: 50%;
+    /* filter: contrast(200%); */
 }
 
 .slime {
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg) drop-shadow(300px 10px 40px #646c5c);
     height: 1000px;
     width: 1000px;
     transition: 2s ease-in-out;
     border: double 50px;
-    border-color: white;
+    border-color: #ded5c4;
     border-radius: 500px;
-    mix-blend-mode:difference;
+    /* transform: skew(5deg); */
+    /* mix-blend-mode:difference; */
     /* z-index: 0; */
 }
 
@@ -23,9 +25,30 @@ body{
     height: 1051px;
     width: 1052px;
     border: double 51px;
-    transition: 1s ease-in-out
+    border-color: #c40a0b;
+    transition: 1s ease-in-out;
 }
 
-/* #first {
-filter: blur(20%);
-} */
+#first {
+/* translate: -150px; */
+margin: auto;
+width: 20%;
+}
+
+#text-one {
+    font-family:fantasy;
+    font-size:140px;
+    color:#c40a0b;
+    position: fixed;
+    z-index: 1;
+    mix-blend-mode: difference;
+    filter: saturate(200%) contrast(400%);
+    transform: skew(30deg) translateX(-270px);
+    background-image: url(assets/Empty_bedroom_\(4103505582\).jpg);
+}
+
+#must {
+    color: #646c5c;
+    filter: drop-shadow(30px 10px 4px #256c5c);
+    font-size: 160px;
+}
