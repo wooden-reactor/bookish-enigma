@@ -15,6 +15,7 @@ body{
     border: double 50px;
     border-color: #ded5c4;
     border-radius: 500px;
+    opacity: 99%;
     /* transform: skew(5deg); */
     /* mix-blend-mode:difference; */
     /* z-index: 0; */
@@ -40,7 +41,7 @@ width: 20%;
     font-size:140px;
     color:#c40a0b;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     mix-blend-mode: difference;
     filter: saturate(200%) contrast(400%);
     transform: skew(30deg) translateX(-270px);
@@ -51,4 +52,23 @@ width: 20%;
     color: #646c5c;
     filter: drop-shadow(30px 10px 4px #256c5c);
     font-size: 160px;
+}
+
+.gifs {
+    scale: 400%;
+    filter: hue-rotate(10deg) saturate(400%) drop-shadow(30px 10px 4px #256c5c);
+    transform: skew(10deg);
+    image-rendering: pixelated;
+    transition: 1s ease-in;
+}
+
+#song {
+    /* height: 400px; */
+    margin: auto;
+    /* width: 20%; */
+    translate: 400px;
+    padding: 20px;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    z-index: 1; 
 }
