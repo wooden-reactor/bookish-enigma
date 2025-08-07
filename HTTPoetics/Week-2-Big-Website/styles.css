@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Gensco;
+    src: url(fonts/GENSCO.otf);
+}
+
+body {
+    cursor: url(assets/Cursor_Trail.png), auto;
+    font-family: Gensco;
+}
+
+#title {
+    font-size: 110px;
+    /* border: dashed 20px; */
+    /* border-radius: 1%; */
+    line-height: 55%;
+    padding: 100px;
+    margin: auto;
+    width: 20%;
+    background-image: url(assets/dead_end.jpg);
+    background-size: 110%;
+    background-position: 70%;
+    filter: contrast(150%) hue-rotate(25deg);
+}
+
+#roadSign {
+    margin: auto;
+    width: 100%;
+}
+
+#opening {
+        transform: translate(0px, 300pxs);
+}
