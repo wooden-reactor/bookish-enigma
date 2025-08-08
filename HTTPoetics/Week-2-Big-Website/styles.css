@@ -130,3 +130,74 @@ body {
 #endU {
 font-size: 40px;
 }
+
+#bird-flying {
+    background-image: url(assets/Clouds_\(transparent\).png);
+    background-size: 150%;
+}
+
+#sad_face {
+    position: absolute;
+}
+
+#lost_and_found {
+   position: absolute;
+   left: 1%;
+   top: 101%;
+}
+
+#erowid {
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    scale: 150%;
+    filter: hue-rotate(50deg);
+}
+
+#curved_arrow {
+    width: 400px;
+    /* background-image: url(assets/cavern.png); */
+    background-size: cover;
+    mix-blend-mode: overlay;
+    /* filter: invert(100%); */
+    position: absolute;
+    filter: blur(10px);
+    z-index: 1;
+    left: 70%;
+    top: 53%;
+}
+
+#face {
+    width: 300px;
+    position: absolute;
+    left: 70%;
+    top: 43%;
+    rotate: 75deg;
+    filter: blur(1px);
+}
+
+#dedication {
+    position: absolute;
+    width: 497px;
+    height: 640px;
+    top: 1%;
+    left: 50%;
+
+}
+
+#spool {
+    position: absolute;
+    width: 497px;
+    height: 640px;
+    top: 1%;
+    left: 50%;
+    mix-blend-mode:overlay;
+    filter: contrast(200%);
+}
+
+#heat {
+    position: absolute;
+    height: 640px;
+    top: 1%;
+    left: 87%;
+}
