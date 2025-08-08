@@ -9,24 +9,124 @@ body {
 }
 
 #title {
-    font-size: 110px;
+    font-size: 170px;
+    color: grey;
     /* border: dashed 20px; */
     /* border-radius: 1%; */
     line-height: 55%;
     padding: 100px;
     margin: auto;
     width: 20%;
-    background-image: url(assets/dead_end.jpg);
+    position: absolute;
+    left: 1%;
     background-size: 110%;
     background-position: 70%;
-    filter: contrast(150%) hue-rotate(25deg);
+    filter: contrast(150%) hue-rotate(25deg) drop-shadow(35px 10px 20px #FAE1E1) blur(5px);
+    mix-blend-mode: overlay;
+    z-index: 1;
 }
 
 #roadSign {
     margin: auto;
     width: 100%;
+    padding: none;
+    filter: saturate(110%) contrast(120%);
 }
 
 #opening {
         transform: translate(0px, 300pxs);
+}
+
+#uncertain {
+     position: absolute;
+     padding: 100px;
+     /* top: 15%; */
+     left: 70%;
+     margin: auto;
+     width: 200px;
+     mix-blend-mode:hue;
+     filter: blur(5px) drop-shadow(33px 20px 20px #FAE1E1);
+     z-index: 1;
+}
+
+#in {
+    position: absolute;
+    font-size: 80px;
+    color: green;
+    left: 65%;
+    top: 120%;
+    margin: auto;
+    mix-blend-mode: luminosity;
+    filter: blur(2px);
+    transition: linear 1s;
+}
+
+#out {
+    position: absolute;
+    font-size: 80px;
+    color: green;
+    left: 109%;
+    top: 72%;
+    margin: auto;
+    mix-blend-mode: luminosity;
+    filter: blur(2px);
+    transition: linear 1s;
+}
+
+#in:hover {
+    font-size: 40px;
+    color: #FAE1E1;
+    transition: linear 1s;
+}
+
+#out:hover {
+    font-size: 120px;
+    color: #FAE1E1;
+    transition: linear 1s;
+}
+
+#forked {
+    filter: saturate(120%);
+}
+
+#vector {
+    position: absolute;
+    scale: .75;
+    left: 69%;
+    top: 87%;
+    filter: blur(5px) saturate(150%);
+    margin: auto;
+    transition: ease-in-out 2s;
+}
+
+#vector:hover {
+    transform: rotate(180deg);
+    transition: ease-in-out 2s;
+}
+
+#loading {
+    margin: auto;
+    background-image: url(assets/progress_bar1.Gif);
+    background-repeat: repeat;
+}
+
+#heart1 {
+    margin: auto;
+    width: 100%;
+    filter: contrast(150%);
+}
+
+#follow {
+    font-size: 80px;
+    text-align: center;
+    padding: 10px;
+    background-image: url(assets/heart2.gif);
+    background-size: contain;
+    filter: drop-shadow(2px 2px 2px);
+    /* margin: auto;
+    width: 100%;  */
+}
+
+#endU {
+font-size: 40px;
 }
