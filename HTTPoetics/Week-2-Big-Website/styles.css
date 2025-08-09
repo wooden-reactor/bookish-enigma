@@ -177,6 +177,11 @@ font-size: 40px;
     filter: blur(1px);
 }
 
+#tape {
+    display: flex;
+    justify-content: space-around;
+}
+
 #dedication {
     position: absolute;
     width: 497px;
@@ -199,14 +204,16 @@ font-size: 40px;
 #heat {
     position: absolute;
     height: 640px;
-    top: 1%;
-    left: 87%;
+    top: 17%;
+    left: 80%;
     transition: ease-in-out 2s;
+    mix-blend-mode: screen;
+    filter: hue-rotate(0deg) saturate(200%) invert(1);
 }
 
 #heat:hover {
     transition: ease-in-out 2s;
-    filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg) saturate(200%) invert(1);
 }
 
 #woods {
@@ -307,8 +314,261 @@ font-size: 40px;
 }
 
 #forgery {
-    position: absolute;
-    top: 3660px;
-    left: 750px;
+    position: fixed;
+    /* top: 3660px;
+    left: 750px; */
+    mix-blend-mode: saturation;
 }
 
+#Run {
+    font-size: 65px;
+    text-align: center;
+    line-height: 1.5;
+    /* padding: 100px; */
+    transform: translateX(500px);
+    border: solid;
+    width: 300px;
+    background-color: white;
+    filter: drop-shadow(10px 2px 20px);
+}
+
+#scan {
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 975px;
+    width: 770px;
+    background-image: url(assets/ride_crop.gif);
+    background-size: contain;
+    background-position: center;
+    filter: blur(1px) contrast(150%) invert(1);
+}
+
+#Escape {
+    font-size: 80px;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+
+#directions {
+    position: fixed;
+    margin: auto;
+    width: 40%;
+    scale: 2;
+    mix-blend-mode: difference;
+    filter: blur(5px) drop-shadow(2px 2px 2px);
+    opacity: 99%;
+    z-index: 1;
+}
+
+#eggs {
+    display: flex;
+    justify-content: center;
+    filter: grayscale(1);
+    z-index: 999;
+    transform: translateX(500px);
+}
+
+#cons {
+    font-size: 20px;
+    padding: 10px;
+    /* text-align: center; */
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    line-height: .001;
+    border: solid;
+    width: 170px;
+    background-color: white;
+    filter: drop-shadow(2px 2px 2px);
+}
+
+#kudzu {
+    filter: grayscale(1) contrast(150%) saturate(120%) blur(30px);
+    transition: ease-in-out 5s;
+    z-index: 0;
+}
+
+#kudzu:hover {
+    filter: grayscale(0) contrast(100%) saturate(130%);
+    transition: ease-in-out 5s;
+}
+
+#green_fall {
+    border: solid 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+    height: 1080px;
+    width: 1080px;
+    background-image: url(assets/green_fall.gif);
+}
+
+#swarm {
+    mix-blend-mode: multiply;
+    filter: contrast(125%);
+}
+
+#behind {
+    background-color: black;
+    height: 1080px;
+    width: 1260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: auto;
+     border-radius: 100px;
+}
+
+#ad {
+    /* background-color: grey; */
+    display: block;
+    line-height: .5;
+    border-radius: 5px;
+    color: white;
+    font-size: 80px;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FAE1E1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.np_ads {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#wash {
+    display: block;
+    line-height: .5;
+    border-radius: 5px;
+    color: white;
+    font-size: 160px;
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #FAE1E1;
+    transform: translateY(-200px);
+    transition: linear 1s;
+}
+
+#wash:hover {
+    display: block;
+    line-height: .5;
+    border-radius: 5px;
+    color: white;
+    font-size: 160px;
+    margin: auto;
+    width: 800px;
+    text-align: center;
+    text-shadow: 10px 10px 2px #FAE1E1;
+    transform: translateY(-200px);
+    transition: linear 1s;
+}
+
+#blotter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    width: 1000px;
+    border: solid;
+}
+
+#blotter2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    width: 800px;
+    border: solid;
+}
+
+#vestry {
+    display: flex;
+    border: solid;
+    z-index: 999;
+}
+
+#netting {
+    position: absolute;
+    top: 8px;
+    left: 70%;
+    height: 1000px;
+    width: 400px;
+    background-image: url(assets/netting.jpg);
+    filter: grayscale(1) contrast(400%) blur(5px);
+}
+
+#book {
+    border: solid;
+}
+
+#diagram {
+    margin: auto;
+    width: 100px;
+    transform: translateX(180px) translateY(-389px);
+    background-image: url(assets/Clouds_\(transparent\).png);
+    background-size: cover;
+}
+
+#downward_arrow {
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 0;
+}
+
+#heim2 {
+    filter: hue-rotate(130deg) saturate(200%) blur(50px);
+}
+
+#transparent_room {
+display: flex;
+justify-content: center;
+align-content: space-evenly;
+/* border: dashed; */
+}
+
+#room_bg {
+    width: 1208px;
+    height: 1200px;
+    background-image: url(assets/Transparent_room_icon.png);
+    /* background-size: contain; */
+    background-repeat: repeat;
+    background-position: 20%;
+    border: solid;
+}
+
+#going {
+    font-size: 60px;
+    width: 50px;
+    color: gainsboro;
+}
+
+#going::selection {
+    color: black;
+}
+
+#dead_end {
+    filter: grayscale(1) contrast(240%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dead_arrow {
+    filter: drop-shadow(2px 2px 2px);
+}
+
+#windy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
