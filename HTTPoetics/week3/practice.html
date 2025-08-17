@@ -1,0 +1,102 @@
+<style>
+button {
+    font-size: 48px;
+    width: 500px;
+    color: aqua;
+    background-color: yellowgreen;
+    mix-blend-mode: overlay;
+    filter: drop-shadow(5px 5px 7px);
+}
+
+#message {
+    background-color: blueviolet;
+    width: 250px;
+    height: 750px;
+    mix-blend-mode: difference;
+    filter: blur(1px);
+}
+
+#holding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 750px;
+    background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/1788074/original_8763505256bc091727c4290e9b6fe605.jpg?1519131581?bc=1);
+    background-size: cover;
+    border: solid;
+    filter: drop-shadow(10px 10px 4px);
+}
+
+#central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1080px;
+    height: 1080px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/06/Rust_stains_from_cracks_in_concrete.png);
+    background-size: cover;
+}
+
+#steve {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 1080px;
+    width: 1080px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+</style>
+
+<html>
+<div id="central">
+    <div id="holding">
+            <button onclick="buttonPressed()">♫</button>
+        <div id="message"><h1>Hi, World :)</h1></div>
+</div>
+</div>
+<div id="steve">
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+    <audio controls></audio>
+</div>
+</html>
+
+<script>
+    function buttonPressed(){
+    let title = document.querySelector('h1')
+    title.innerText = "Bye, World :("
+
+    let button = document.querySelector('button')
+    button.style.color = "yellowgreen"
+    button.style.backgroundColor = "aqua"
+    button.innerText = "↓"
+    button.style.mixBlendMode = "difference"
+
+    let message = document.querySelector("#message")
+    message.style.backgroundColor = "gold"
+    message.style.mixBlendMode = "exclusion"
+
+    let holding = document.querySelector("#holding")
+    holding.style.backgroundImage = "url(https://d2w9rnfcy7mm78.cloudfront.net/1788227/original_3cbc2ef306a723a52d780f0c74678ca3.jpg?1519133156?bc=1)"
+    holding.style.border = "dashed 10px"
+
+    let central = document.querySelector("#central")
+    central.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/e/ef/Concrete_silos%2C_Concrete%2C_WA._%2836417695454%29.jpg)"
+    }
+</script>

@@ -1,0 +1,316 @@
+<style>
+@font-face {
+    font-family: Hershey-Peignot-bold;
+    src: url(fonts/Hershey-Peignot/Hershey-Peignot-Bold.otf);
+}
+
+@font-face {
+    font-family: Hershey-Peignot-Light;
+    src: url(fonts/Hershey-Peignot/Hershey-Peignot-Light.otf)
+}
+
+audio{
+    width: 200px;
+    height: 25px;
+    transform: skew(20deg);
+    filter: drop-shadow(2px 4px 2px);
+    mix-blend-mode: difference;
+}
+
+
+body {
+    cursor: url(assets/reich-cursor.png), auto;
+    margin: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-family: Hershey-Peignot-bold;
+    font-size: 60px;
+    transition-duration: 1s;
+}
+
+button {
+    font-family: Hershey-Peignot-light;
+    font-size: 48px;
+    width: 500px;
+    color: black;
+    background-color: none;
+    mix-blend-mode: overlay;
+    filter: drop-shadow(5px 5px 7px);
+    border-radius: 5px;
+    rotate: 0deg;
+    scale: 1;
+    transition: 250ms ease-in-out;
+}
+
+button:hover {
+    scale: 1.05;
+    rotate: 1deg;
+    transition: 250ms ease-in-out;
+}
+
+#message {
+    background-color: whitesmoke;
+    width: 250px;
+    height: 750px;
+    mix-blend-mode: difference;
+    filter: blur(10px);
+    transition: 2s linear;
+}
+
+#holding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 750px;
+    background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/25171483/original_d6a7a160d4298670f76eef8d9f407cce.png?1702317682?bc=0);
+    background-size: cover;
+    border: solid;
+    padding: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 4px) blur(0px);
+    transition: 2s linear;
+}
+
+#central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1080px;
+    height: 1080px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/71/Teatro_San_Samuele_2007.jpg?20070814114804);
+    background-size: cover;
+    transform: skew(0deg);
+    transition: 2s linear;
+}
+
+#central:hover {
+    transform: skew(0deg);
+    transition: 2s linear;
+}
+
+#steve {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; 
+    grid-template-rows: 2fr;
+
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    width: 0px;
+    visibility:hidden;
+    background-image: url(assets/teal-geo-3.png);
+    background-size:cover;
+    background-position: 190px;
+    transform: translateY(-200px);
+    transition: 2s linear;
+}
+
+  #container{
+    background-color:#212228;
+    background-image: linear-gradient(#292a30 .1em, transparent .1em), 
+    linear-gradient(90deg, #292a30 .1em, transparent .1em);
+    background-size: 4em 4em;
+    height: 100vh;
+  }
+  
+  
+  #card{
+    width: 108px;
+    height: 142px;
+    background-image: url(assets/music.gif);
+    background-size: cover;
+    border-radius: 5px;
+    cursor:move;
+    position: fixed;
+    z-index: 9;
+    transform: translate(0px, 0px);
+    transition: 1s ease-in-out;
+  }
+
+#name {
+    margin: auto;
+    width: 540px;
+    height: 270px;
+    border: solid;
+    border-radius: 50px;
+    background-image: url(https://d2w9rnfcy7mm78.cloudfront.net/38460399/original_397dcff9410078953721ad8ec65a69a5.png?1753894897?bc=0);
+    background-position: ;
+    color: black;
+    font-size: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    line-height: 50%;
+    mix-blend-mode: difference;
+    filter: drop-shadow(2px 2px 2px);
+    z-index: 999;
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+    transition: 1s ease-in-out;
+}
+
+#name:hover {
+    filter: hue-rotate(300deg);
+    transition: 1s ease-in-out;
+}
+
+#name::selection {
+    color: white;
+}
+
+#all {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dragMe {
+    position:relative;
+    z-index: 1;
+}
+
+#advice {
+    font-size: 30px;
+    visibility:hidden;
+}
+
+#pause {
+    transform: translateX(180px) translateY(20px);
+    filter: invert(0) drop-shadow(2px 2px 2px);
+    transition: 500ms ease-in-out;
+}
+
+#pause:hover {
+    filter: invert(1);
+    transition: 500ms ease-in-out;
+}
+</style>
+
+<html>
+<link rel="icon" type="image/x-icon" href="assets/music.png">
+
+    <title>Music For 18 Audio Elements</title>
+<!-- <div id="all"> -->
+        <div id="container"><div id="card"></div>
+</div>
+    <div id="name">
+                <h2>Music For</h2>
+                <h2>18 Audio Elements</h2>
+    </div>
+    <div id="central">
+        <div id="holding">
+                <button onclick="buttonPressed()">♫</button>
+            <div id="message"><h1>Hi, World :)</h1></div>
+    </div>
+    </div>
+    <div id="steve">
+        <div class="dragMe"><audio src="https://files.catbox.moe/nmveya.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/uwowaa.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/brc5t4.mp3" controls loop></audio></div>
+
+        <div class="dragMe"><audio src="https://files.catbox.moe/lwuqxk.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/hdtd5l.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/py215d.mp3" controls loop></audio></div>
+
+        <div class="dragMe"><audio src="https://files.catbox.moe/hrud76.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/3dhs3t.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/gfoxkd.mp3" controls loop></audio></div>
+
+        <div class="dragMe"><audio src="https://files.catbox.moe/t379m6.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/5bhe5e.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/vofgxb.mp3" controls loop></audio></div>
+
+        <div class="dragMe"><audio src="https://files.catbox.moe/6ughfg.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/6374n6.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/9jh6lo.mp3" controls loop></audio></div>
+
+        <div class="dragMe"><audio src="https://files.catbox.moe/7ak20m.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/yni7yl.mp3" controls loop></audio></div>
+        <div class="dragMe"><audio src="https://files.catbox.moe/xwosh9.mp3" controls loop></audio></div>
+
+        <img id="pause" width="50px" src="https://icon-library.com/images/pause-icon-transparent/pause-icon-transparent-14.jpg">
+
+    </div>
+
+</html>
+
+<script>
+    function buttonPressed(){
+
+        let title = document.querySelector('h1')
+        title.innerText = "Bye, World :("
+
+        let button = document.querySelector('button')
+        button.style.color = "white"
+        button.style.backgroundColor = "aqua"
+        button.innerText = "↬"
+        button.style.mixBlendMode = "difference"
+
+        let message = document.querySelector("#message")
+        message.style.backgroundColor = "gold"
+        message.style.mixBlendMode = "exclusion"
+
+        let holding = document.querySelector("#holding")
+        holding.style.color = "white"
+        holding.style.border = "none"
+        holding.style.filter = "drop-shadow(10px 10px 4px) blur(10px)"
+
+        let central = document.querySelector("#central")
+        central.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sala_del_teatro_Giuseppe_Verdi.jpg/1920px-Sala_del_teatro_Giuseppe_Verdi.jpg)"
+        central.style.width = "200px"
+        central.style.borderRadius = "50px"
+        central.style.filter = "blur(20px)"
+
+        let name = document.querySelector("#name")
+        name.style.transform = "rotate(-90deg)"
+        name.style.transition = "2s ease-in-out"
+
+    
+
+        let steve = document.querySelector("#steve")
+        steve.style.height = "1080px"
+        steve.style.width = "1080px"
+        steve.style.visibility = "visible"
+
+        let card = document.querySelector ("#card")
+        card.style.transform = "translate(890px, 225px)"
+
+    }
+
+let newX = 0, newY = 0, startX = 0, startY = 0;
+  
+const card = document.getElementById('card')
+
+card.addEventListener('mousedown', mouseDown)
+
+function mouseDown(e){
+    startX = e.clientX
+    startY = e.clientY
+
+    document.addEventListener('mousemove', mouseMove)
+    document.addEventListener('mouseup', mouseUp)
+}
+
+function mouseMove(e){
+    newX = startX - e.clientX
+    newY = startY - e.clientY
+
+    startX = e.clientX
+    startY = e.clientY
+
+    card.style.top = (card.offsetTop - newY) + 'px'
+    card.style.left = (card.offsetLeft - newX) + 'px'
+}
+
+function mouseUp(e){
+    document.removeEventListener('mousemove', mouseMove)
+}
+
+document.getElementById("pause").onclick = function() {
+    var audio = document.querySelectorAll("audio");
+    if (audio.play) audio.pause();
+    // else audio.pause();
+}
+
+</script>
