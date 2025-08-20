@@ -1,0 +1,166 @@
+<style>
+#welcome{
+    text-align: center;
+    font-size: 80px;
+}
+.mouseRace {
+    /* mix-blend-mode: difference; */
+    scale: 1;
+    border: none 0px;
+    background-image: url(assets/mouse_hole.gif);
+    transition: 1s ease-in-out;
+}
+
+.mouseRace:hover {
+    scale: 1.5;
+    background-image: url(assets/crazy_mouse.gif);
+    transition: 1s ease-in-out;
+    opacity: 75%;
+}
+
+#raceContainer{
+    background-image: url(assets/lopoly_mouse.gif);
+}
+
+#standoff {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    filter: grayscale(1) contrast(400%);
+    transition: 1s ease-in-out;
+}
+
+#standoff:hover {
+    filter: grayscale(0) contrast(200%);
+    transition: 1s ease-in-out;
+}
+
+#cute {
+    margin: auto;
+    background-image: url(assets/cute_mouse.gif);
+    filter: grayscale(.4) contrast(400%);
+}
+
+#royalty {
+    text-align: center;
+    text-decoration:wavy;
+    font-size: 52px;
+    color: white;
+    filter: drop-shadow(2px 2px black);
+    transition: 1s ease-in-out;
+}
+
+#royalty:hover {
+    color: yellowgreen;
+    transition: 1s ease-in-out;
+}
+
+.intro {
+    filter: drop-shadow(2px 5px 5px);
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+
+.intro:hover {
+    filter: drop-shadow(2px 5px 50px);
+    transition: 1s ease-in-out;
+}
+
+#big {
+    text-decoration: wavy;
+    color: red;
+    transition: 500ms ease-in-out;
+}
+
+#big:hover {
+    scale: 4;
+    transition: 500ms ease-in-out;
+}
+
+.documentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: dashed 1px;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#transformer {
+    filter: grayscale(1) contrast(100%) invert(1);
+}
+
+#range {
+
+}
+
+#music {
+    text-align: left;
+    font-size: 30px;
+}
+
+#break {
+    font-size: 160px;
+    color: white;
+    filter: drop-shadow(2px 2px black);
+    background-image: url(assets/mouse_sprint.gif);
+    background-size: contain;
+}
+
+#skate {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+</style>
+
+<html>
+<div id="raceContainer">
+    <div class="mouseRace">
+        <p id="Welcome">Welcome to Mouse City</p>
+        <marquee scrollamount="30" direction="right"><img height="200px" src="assets/birds_eye_mouse.gif"></marquee>
+        <marquee scrollamount="33" direction="right"><img height="150px" src="assets/birds_eye_mouse.gif"></marquee>
+        <marquee scrollamount="32" direction="right"><img height="160px" src="assets/birds_eye_mouse.gif"></marquee>
+    </div>
+</div>
+
+    <div id="standoff">
+        <img src="assets/lady_mouse.gif">
+        <p class="intro">A place where starcrossed mice race for fame, fortune, cheese, and the chance for a better life.</p>
+        <img src="assets/sir_mouse.gif">
+        <p class="intro">Every mouse has a story, especially if you're fluent in Squeak.</p>
+    </div>
+
+    <div id="cute"><p id="royalty">The Mice of Mouse City get royalty checks in the mail every month. When you click your computer mouse, you're supporting the wellbeing of little rodents with <span id="big">big</span> dreams.</p>
+    </div>
+    <div class="documentation">
+        <img height="500px" src="assets/mouse_cheese.gif">
+        <p>Cheese Theft has become something of a sport for the citizens of Mouse City. Much in the way that we humans jog in simulation of our escape from predators/our hunt for prey, so too do the mice simulate dangers to give reason to their exercise and to honor their banditry past.</p>
+    </div>
+    <div class="documentation">
+        <p>It seems it was just yesterday that whisker and tail were the only tools a mouse could rely upon. Now, metamorphic biotech is poised to accelerate micekind into an exciting (if unnerving) future.</p>
+        <img id="transformer" height="500px" src="assets/mouse_transform.gif">
+    </div>
+    <div class="documentation">
+        <img height="250px" src="assets/guitar_mouse.gif">
+        <p id="music">Musicians in Mouse City play electrifying updates on traditional mouse music, making use of tones well above the human hearing range.</p>
+        <img id="range" src="assets/hearing_range.png">
+        <img height="250px" src="assets/guitar_mouse.gif">
+    </div>
+    <p id="break">But fear not. . .</p>
+    <div class="documentation">
+        <p>There are still quiet places (and quiet hours in the loudest places) for those who seek them. It is, after all, a city of, by, and for Mice.</p>
+        <img src="assets/shh_mouse.gif">
+    </div>
+    <marquee direction="right"><p>Mice Skateboarding was recently added to the Mice Olympics.</p></marquee>
+    <img id="skate" src="assets/skate_mouse.gif">
+    <div class="documentation">
+        <img width="800px" src="assets/redwall2.jpeg">
+        <p>Though they are peaceful creatures, mice are very fond of swashbuckling epics. Mice filmmmakers who don't venture into the genre are, almost without exception, doomed to obscurity.</p>
+    </div>
+</html>
+
+<script>
+
+</script>
