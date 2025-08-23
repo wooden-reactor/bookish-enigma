@@ -2,7 +2,9 @@
 #welcome{
     text-align: center;
     font-size: 80px;
+    filter: drop-shadow(2px 2px gold);
 }
+
 .mouseRace {
     /* mix-blend-mode: difference; */
     scale: 1;
@@ -22,6 +24,12 @@
     background-image: url(assets/lopoly_mouse.gif);
 }
 
+#sweep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #standoff {
     margin: auto;
     display: flex;
@@ -38,7 +46,14 @@
 #cute {
     margin: auto;
     background-image: url(assets/cute_mouse.gif);
-    filter: grayscale(.4) contrast(400%);
+    background-position: center;
+    filter: grayscale(.4) contrast(400%) hue-rotate(0deg);
+    transition: ease-in-out 1s;
+}
+
+#cute:hover {
+    filter: grayscale(0) contrast(100%) hue-rotate(60deg);
+    transition: ease-in-out 1s;
 }
 
 #royalty {
@@ -51,7 +66,8 @@
 }
 
 #royalty:hover {
-    color: yellowgreen;
+    color: silver;
+    filter: drop-shadow(2px 2px blue);
     transition: 1s ease-in-out;
 }
 
@@ -91,9 +107,9 @@
     filter: grayscale(1) contrast(100%) invert(1);
 }
 
-#range {
+/* #range {
 
-}
+} */
 
 #music {
     text-align: left;
@@ -106,22 +122,152 @@
     filter: drop-shadow(2px 2px black);
     background-image: url(assets/mouse_sprint.gif);
     background-size: contain;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+
+#break:hover {
+    background-size: 9%;
+    transition: 1s ease-in-out;
 }
 
 #skate {
     margin: auto;
     display: flex;
     justify-content: center;
+    transform: rotate(0deg);
+    transition: 500ms ease-in-out;
+}
+
+#skate:hover {
+    transform: rotate(360deg);
+    transition: 500ms ease-in-out;
+}
+
+.olympics {
+    font-size: 24px;
+    color: silver;
+    transform: skew(30deg);
+    filter: drop-shadow(2px 2px gold);
+}
+
+#mice_run {
+    display: flex;
+    justify-content: space-between;
+    scale: 1;
+    transition: 1s ease-in-out;
+}
+#mice_run:hover {
+    scale: 2;
+    transition: 1s ease-in-out;
+}
+
+#donate {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-image: url(assets/gold_mouse.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+#micecoin {
+    font-size: 20px;
+    font: bolder;
+    color: purple;
+    /* background-color: gold; */
+}
+
+.mouse_house {
+    height: 300px;
+    border: solid;
+    box-shadow: 2px 2px;
+}
+
+#examples {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quiet {
+    font-size: 10px;
+    filter: drop-shadow(0px 0px 0px);
+    transition: 1s ease-in-out;
+}
+
+.quiet:hover {
+    font-size: 10px;
+    filter: drop-shadow(2px 2px 2px purple);
+    transition: 1s ease-in-out;
+}
+
+#nimh {
+    font-style: italic;
+}
+
+#jab {
+    filter: blur(20px) grayscale(1) hue-rotate(360deg);
+    transition: 1s linear;
+}
+
+#jab:hover {
+    filter: blur(0px) grayscale(0) hue-rotate(0deg);
+    transition: 1s linear;
+}
+
+.tip {
+    display: flex;
+    justify-content: center;
+    transform: skew(0deg, 0deg);
+    filter: drop-shadow(2px 20px silver) contrast(400%) hue-rotate(50deg);
+    mix-blend-mode: luminosity;
+    transition: 2s linear;
+}
+
+.tip:hover {
+    transform: skew(70deg, 80deg);
+    transition: 2s linear;
+}
+
+#Emerald {
+    filter: drop-shadow(2px 4px 1px #50C878);
+    color: whitesmoke;
+    transition: 1.5s ease-in-out;
+}
+
+#Emerald:hover {
+    filter: drop-shadow(2px 4px 10px #A53EFF);
+    color: #50C878;
+    transition: 1.5s ease-in-out;
+}
+
+#end {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    transform: skew(0deg);
+    filter: grayscale(0%) contrast(400%);
+    transition: 1s ease-in-out;
+}
+
+#end:hover {
+    transform: skew(0deg, 180deg);
+    filter: grayscale(200%) contrast(400%);
+    transition: 1s ease-in-out;
 }
 </style>
 
 <html>
+<link rel="icon" type="image/x-icon" href="assets/sir_mouse.gif">
+<title>Mouse City: A Primer</title>
 <div id="raceContainer">
     <div class="mouseRace">
         <p id="Welcome">Welcome to Mouse City</p>
         <marquee scrollamount="30" direction="right"><img height="200px" src="assets/birds_eye_mouse.gif"></marquee>
         <marquee scrollamount="33" direction="right"><img height="150px" src="assets/birds_eye_mouse.gif"></marquee>
         <marquee scrollamount="32" direction="right"><img height="160px" src="assets/birds_eye_mouse.gif"></marquee>
+        <div id="sweep"><img src="assets/mouse_welcome.gif"></div>
+        <p id="Welcome">Welcome to Mouse City</p>
     </div>
 </div>
 
@@ -134,33 +280,144 @@
 
     <div id="cute"><p id="royalty">The Mice of Mouse City get royalty checks in the mail every month. When you click your computer mouse, you're supporting the wellbeing of little rodents with <span id="big">big</span> dreams.</p>
     </div>
+    <div id="donate">
+        <button onclick="playSound()" id="micecoin">Click to generate MiceCoin!™</button>
+        <audio id="myAudio" src="https://files.catbox.moe/smudl5.wav" preload="auto"></audio>
+    </div>
+    <br>
+    <br>
     <div class="documentation">
         <img height="500px" src="assets/mouse_cheese.gif">
-        <p>Cheese Theft has become something of a sport for the citizens of Mouse City. Much in the way that we humans jog in simulation of our escape from predators/our hunt for prey, so too do the mice simulate dangers to give reason to their exercise and to honor their banditry past.</p>
+        <p>Cheese Theft has become something of a sport for the citizens of Mouse City. Much in the way that we humans jog in simulation of our escape from predators/our hunt for prey, so too do the mice simulate dangers to give urgency to their exercise and to honor their banditry past.</p>
     </div>
     <div class="documentation">
-        <p>It seems it was just yesterday that whisker and tail were the only tools a mouse could rely upon. Now, metamorphic biotech is poised to accelerate micekind into an exciting (if unnerving) future.</p>
+        <p>It seems it was just yesterday that ear and whisker, tooth and tail were the only tools a mouse could rely upon. Now, metamorphic biotech is poised to accelerate micekind into an exciting (if unnerving) future.</p>
         <img id="transformer" height="500px" src="assets/mouse_transform.gif">
     </div>
+    <marquee class="olympics" direction="right"><p>The Mice Olympics are held in Mouse City every year.</p></marquee>
+    <img id="skate" src="assets/skate_mouse.gif">
+    <marquee class="olympics"><p>Mice Skateboarding was recently added to the Mice Olympics.</p></marquee>
     <div class="documentation">
+        <img width="800px" src="assets/redwall2.jpeg">
+        <p>Though they are peaceful creatures, mice are very fond<br> of swashbuckling epics.<br> Mice filmmmakers who don't venture into the genre are, almost without exception, doomed to obscurity.</p>
+    </div>
+    <div class="documentation">
+        <p>One of the great mouse filmmakers is named<br> Mouseton Scorsqueaksy.</p>
+        <img src="assets/director_mouse.png">
+    </div>
+        <div class="documentation">
         <img height="250px" src="assets/guitar_mouse.gif">
-        <p id="music">Musicians in Mouse City play electrifying updates on traditional mouse music, making use of tones well above the human hearing range.</p>
+        <p id="music">Musicians in Mouse City play electrifying updates on traditional mouse music, making use of tones well above human hearing range.</p>
         <img id="range" src="assets/hearing_range.png">
         <img height="250px" src="assets/guitar_mouse.gif">
     </div>
     <p id="break">But fear not. . .</p>
     <div class="documentation">
-        <p>There are still quiet places (and quiet hours in the loudest places) for those who seek them. It is, after all, a city of, by, and for Mice.</p>
+        <p>There are still <span class="quiet">quiet</span> places (and <span class="quiet">quiet</span> hours in the loudest places)<br> for those who seek them.</p>
         <img src="assets/shh_mouse.gif">
     </div>
-    <marquee direction="right"><p>Mice Skateboarding was recently added to the Mice Olympics.</p></marquee>
-    <img id="skate" src="assets/skate_mouse.gif">
+    <br>
     <div class="documentation">
-        <img width="800px" src="assets/redwall2.jpeg">
-        <p>Though they are peaceful creatures, mice are very fond of swashbuckling epics. Mice filmmmakers who don't venture into the genre are, almost without exception, doomed to obscurity.</p>
+        <img src="assets/shh_mouse.gif">
+        <p>It is, after all,<br> a city of, by, and for Mice.</p>
     </div>
+    <div id="mice_run">
+        <img src="assets/mouse_running.gif">
+        <img src="assets/mouse_running.gif">
+        <img src="assets/mouse_running.gif">
+        <img src="assets/mouse_running.gif">
+        <img src="assets/mouse_running.gif">
+    </div>
+    <div class="documentation">
+        <img src="assets/flower_mouse.gif">
+        <img src="assets/flower_mouse.gif">
+        <img src="assets/flower_mouse.gif">
+        <p>Megaflora (as mice perceive it)<br> plays an important role<br> in Mouse Architecture.</p>
+    </div>
+    <br>
+    <div class="documentation">
+        <p>Some examples of mouse habitations. . .</p>
+    </div>
+    <br>
+     <div id="examples">
+         <img class="mouse_house" src="assets/mouse_house1.jpeg">
+            <img class="mouse_house" src="assets/mouse_house2.jpg">
+            <img class="mouse_house" src="assets/mouse_house3.jpg">
+     </div>
+     <br>
+    <br>
+    <br>
+    <div class="documentation">
+        <p>Some theorize that lab testing gave rise to the mice that founded Mouse City.</p>
+        <img id="jab" src="assets/mouse_jab.gif">
+        <p>Others say this is just a murine iteration of <span id="nimh">The Rats of Nimh</span>, a tale too fanciful to live anywhere other than the pages of a book.</p>
+    </div>
+    <br>
+    <div class="documentation">
+        <img height="400px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/JohnBCalhoun1986.JPG/1920px-JohnBCalhoun1986.JPG">
+        <p><a href="https://en.wikipedia.org/wiki/John_B._Calhoun">John B. Calhoun</a>, may he rest in peace,<br> was unavailable for comment.</p>
+    </div>
+    <br>
+        <div class="documentation">
+         <p>For religious reasons,<br> mirrors are forbidden in Mouse City,</p>
+         <img src="assets/mouse_mirror.jpg">
+         
+    </div>
+    <br>
+        <div class="documentation">
+                <img height="600px" src="assets/mouse_lake.png">
+            <p>excepting for<br> the placid surface<br> of their reservoir.</p>
+        
+        </div>
+        <marquee scrollamount="30" direction="right"><img src="assets/mouse_crawl.gif"></marquee>
+        <div class="documentation"><p id="Emerald"><b>The Emerald of 16 Peeks</b> <br>holds special meaning <br>for those who practice Mouseism.</p></div>
+        <br>
+        <div class="tip"><img src="assets/mouse_peek.gif"></div>
+        <div class="tip">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+        </div>
+         <div class="tip">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+        </div>
+           <div class="tip">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+        </div>
+           <div class="tip">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+        </div>
+           <div class="tip">
+            <img src="assets/mouse_peek.gif">
+            <img src="assets/mouse_peek.gif">
+        </div>
+        <div class="tip"><img src="assets/mouse_peek.gif"></div>
+        <div class="documentation">
+            <img height="500px" src="assets/mouse_meditate.jpg">
+            <p>A mouse meditates on the 16 Peeks.</p>
+        </div>
+        <br>
+        <div class="documentation">
+            <p>This is your brain.</p>
+            <img width="600px" src="assets/human_brain.png">
+        </div>
+        <br>
+        <div class="documentation">
+            <img width="600px" src="assets/mouse_brain.png">
+            <p>This is your brain on mouse.</p>
+        </div>
+        <div id="end"><img src="assets/mouse_end.png"></div>
 </html>
 
 <script>
-
+    function playSound() {
+        let audio = document.getElementById ("myAudio");
+        audio.play();
+    }
 </script>
